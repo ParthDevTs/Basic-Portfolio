@@ -11,7 +11,7 @@
 
   <span class="example-spacer"></span>
   <button
-    mat-icon-button
+  mat-raised-button
     class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon"
     routerLink="home"
@@ -28,14 +28,9 @@
     mode="push"
     autosize
   >
+  
     <div class="row">
-      <button mat-raised-button color="accent" routerLink="home/profile">
-        <mat-icon>person_outline</mat-icon> Profile
-      </button>
-    </div>
-    <br />
-    <div class="row">
-      <button mat-raised-button color="accent" routerLink="home/projects">
+      <button mat-raised-button routerLink="home/projects">
         <mat-icon>work_outline</mat-icon> Projects
       </button>
     </div>

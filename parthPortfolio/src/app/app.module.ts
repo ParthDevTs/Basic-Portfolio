@@ -52,6 +52,8 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -68,7 +70,15 @@ import { ProjectsComponent } from './projects/projects.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    NgbModule,
+    MatCardModule,
+    MatTabsModule,
+    MatExpansionModule,
+    MatProgressBarModule,
+    MatListModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

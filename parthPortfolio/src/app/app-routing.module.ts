@@ -6,8 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'home', pathMatch:"full"},
-  { path: 'home', component: HomeComponent},
-  { path: 'home/profile', component: ProfileComponent},
+  { path: 'home', component: ProfileComponent},
   { path: 'home/projects', component:ProjectsComponent}
 ];
 
