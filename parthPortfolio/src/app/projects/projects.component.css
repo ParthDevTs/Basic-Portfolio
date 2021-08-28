@@ -1,0 +1,18 @@
+.container-fluid {
+  margin-top: 3%;
+  align-self: center;
+}
+.ngb-carousel {
+  border-radius: 2px;
+}
+.container {
+  margin-top: 5%;
+}
+.mat-card {
+  color: black;
+  background-color: transparent;
+  box-shadow: 2px 3px 3px 2px rgba(56, 54, 54, 0.213);
+}
+.img {
+  object-fit: cover;
+}

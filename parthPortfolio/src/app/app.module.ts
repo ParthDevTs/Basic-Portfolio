@@ -53,6 +53,8 @@ import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -62,6 +64,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavComponent,
     ProfileComponent,
     ProjectsComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -76,11 +79,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatTabsModule,
     MatExpansionModule,
     MatProgressBarModule,
-    MatListModule
+    MatListModule,
+    NgbCarouselModule,
+   
+  
     
     
   ],
   providers: [],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
