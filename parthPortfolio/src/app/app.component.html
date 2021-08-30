@@ -16,7 +16,7 @@
     color="accent"
     class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon"
-    routerLink="home"
+    routerLink=""
     (click)="home()"
     *ngIf="showHome == true"
   >
@@ -25,15 +25,58 @@
 </mat-toolbar>
 
 <mat-drawer-container class="example-container">
-  <mat-drawer #drawer color="accent" class="example-sidenav" mode="push">
+  <mat-drawer #drawer class="example-sidenav" mode="push">
     <div class="row">
       <button
+        color="primary"
+        mat-button
+        routerLink="home/Profile"
+        class="buttonclass"
+        (click)="profile()"
+      >
+        <mat-icon>work_outline</mat-icon> Profile
+      </button>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="row">
+      <button
+        color="primary"
         mat-button
         routerLink="home/projects"
         class="buttonclass"
         (click)="portfolio()"
       >
         <mat-icon>work_outline</mat-icon> Projects
+      </button>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="row">
+      <button
+        color="primary"
+        mat-button
+        routerLink="home/weather"
+        class="buttonclass"
+        (click)="weather()"
+      >
+        <mat-icon>work_outline</mat-icon> Weather
+      </button>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="row">
+      <button
+        color="primary"
+        mat-button
+        routerLink="home/jokes"
+        class="buttonclass"
+        (click)="jokes()"
+      >
+        <mat-icon>work_outline</mat-icon> Jokes
       </button>
     </div>
   </mat-drawer>

@@ -13,7 +13,7 @@
 }
 
 .example-sidenav {
-  padding: 20px;
+  padding: 5px;
   /* overflow: hidden;
   max-height: 100%; */
 }
@@ -26,6 +26,6 @@
 .example-spacer {
   flex: 1 1 auto;
 }
-.buttonclass{
-  width:max-content;
+.buttonclass {
+  width: max-content;
 }

@@ -9,13 +9,27 @@ export class AppComponent {
   title = 'parthPortfolio';
 
   showHome = false;
-  navName="Portfolio";
+  navName="Home";
+  
+  home(){
+    this.navName="Home";
+    this.showHome=false;
+  }
+
   portfolio(){
     this.navName="Projects";
     this.showHome=true;
   }
-  home(){
-    this.navName="Portfolio";
-    this.showHome=false;
+  profile(){
+    this.navName="Profile";
+    this.showHome=true;
+  }
+  weather(){
+    this.navName="Weather"
+    this.showHome=true;
+  }
+  jokes(){
+    this.navName="Joke"
+    this.showHome=true;
   }
 }

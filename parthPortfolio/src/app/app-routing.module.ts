@@ -7,8 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:'home', pathMatch:"full"},
-  { path: 'home', component: ProfileComponent},
+  { path: '', component:HomeComponent},
+  { path: 'home/Profile', component: ProfileComponent},
   { path: 'home/projects', component:ProjectsComponent},
   { path: 'home/jokes', component:JokesComponent},
   { path: 'home/weather', component: WeatherComponent}
