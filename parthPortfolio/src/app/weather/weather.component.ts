@@ -10,29 +10,46 @@ import { WeatherService } from './weather.service';
 export class WeatherComponent implements OnInit {
   constructor(private service: WeatherService) {}
 
-  ngOnInit(): void {
-
-  }
-  city: City = new City();
+  ngOnInit(): void {}
+  userCity: string;
+  
+  citydata:any = null;
   url;
+  errorMessage;
+
+  getData() {
+    this.getWeather();
+  }
+
   getWeather() {
-    this.service.getWeather('London').subscribe(
+    let city: City = new City();
+    let citd: string;
+    if (this.userCity != null) {
+      if (this.userCity.search(/ /) != -1) {
+        citd = this.userCity.replace(/ /, '');
+      } else {
+        citd = this.userCity;
+      }
+    }
+
+    this.service.getWeather(citd).subscribe(
       (response) => {
-        this.city.temp = Math.floor(response.main.feels_like);
-        this.city.feelsLike = Math.floor(response.main.feels_like);
-        this.city.tempMin = Math.round(response.main.temp_min);
-        this.city.tempMax = Math.round(response.main.temp_max);
-        this.city.pressure = response.main.pressure;
-        this.city.humidity = response.main.humidity;
-        this.city.description = response.weather[0].description;
-        this.city.name = response.name;
-        this.city.country = response.sys.country;
+        city.temp = Math.floor(response.main.feels_like)-273;
+        city.feelsLike = Math.floor(response.main.feels_like)-273;
+        city.tempMin = Math.round(response.main.temp_min)-273;
+        city.tempMax = Math.round(response.main.temp_max)-273;
+        city.pressure = response.main.pressure;
+        city.humidity = response.main.humidity;
+        city.description = response.weather[0].description;
+        city.name = response.name;
+        city.country = response.sys.country;
         this.url =
           'http://openweathermap.org/img/w/' +
           response.weather[0].icon +
           '.png';
+        this.citydata=city
       },
-      (error) => console.log(error.error.message)
+      (error) => (this.errorMessage = 'Enter Valid City ')
     );
   }
 }
