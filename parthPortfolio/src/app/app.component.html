@@ -30,23 +30,10 @@
       <button
         color="primary"
         mat-button
-        routerLink="home/Profile"
-        class="buttonclass"
-        (click)="profile()"
-      >
-        <mat-icon>work_outline</mat-icon> Profile
-      </button>
-    </div>
-
-    <mat-divider></mat-divider>
-
-    <div class="row">
-      <button
-        color="primary"
-        mat-button
-        routerLink="home/projects"
+        routerLink="profile/projects"
         class="buttonclass"
         (click)="portfolio()"
+        (click)="drawer.toggle()"
       >
         <mat-icon>work_outline</mat-icon> Projects
       </button>
@@ -58,9 +45,10 @@
       <button
         color="primary"
         mat-button
-        routerLink="home/weather"
+        routerLink="profile/weather"
         class="buttonclass"
         (click)="weather()"
+        (click)="drawer.toggle()"
       >
         <mat-icon>work_outline</mat-icon> Weather
       </button>
@@ -72,9 +60,10 @@
       <button
         color="primary"
         mat-button
-        routerLink="home/jokes"
+        routerLink="profile/jokes"
         class="buttonclass"
         (click)="jokes()"
+        (click)="drawer.toggle()"
         disabled
       >
         <mat-icon>work_outline</mat-icon> Jokes

@@ -1,11 +1,10 @@
 .jumbotron{
     background-color: transparent;
-    box-shadow: 2px 3px 3px 2px rgba(174, 170, 170, 0.597);
-    color: black;
+    
+    color: rgb(255, 255, 255);
 }
 .display-1{
-    color: rgb(226, 4, 71);
-    
+    color: rgb(255, 248, 250);    
 }
 .container{
     margin-top: 2%;

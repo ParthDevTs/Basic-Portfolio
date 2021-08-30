@@ -1,24 +1,29 @@
-<div class="container">
-  <div class="jumbotron">
-    <div class="display-1 text-center">Welcome</div>
-    <hr />
-    <br />
+
+  <h2 mat-dialog-title class="display-1 text-center">Welcome</h2>
+  <mat-divider></mat-divider>
+  <mat-dialog-content class="mat-typography">
+    <br>
     <p
-      style="
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-          'Lucida Sans', Arial, sans-serif;
-      "
-    >
-      This Application is made to serve as a profile with some added
-      functionalities. To access these features <b>Click on Menu Icon</b>.
-    </p>
-    <br />
-    <p>Currently available features:</p>
-    <li>Profile</li>
-    <li>Project</li>
-    <li>Weather: Obtain realtime weather Updates in Weather Page</li>
-    <br />
-    <p>Upcoming features:</p>
-    <li>Jokes: Get a new joke based on your preferences</li>
-  </div>
-</div>
+    style="
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    "
+  >
+    This Application is made to serve as a profile with some added
+    functionalities.
+  </p>
+  <br />
+  <p>Currently available features:</p>
+  <li>Profile</li>
+  <li>Project</li>
+  <li>Weather: Realtime weather Updates in Weather Page</li>
+  <br />
+  <p>Upcoming features:</p>
+  <li>Jokes: Get a new joke based on your preferences</li>
+  <br>
+  <p class="text-info">To access these features Click on Menu Icon.</p>
+  </mat-dialog-content>
+  
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" mat-dialog-close cdkFocusInitial>Close</button>
+</mat-dialog-actions>

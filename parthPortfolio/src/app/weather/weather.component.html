@@ -37,7 +37,8 @@
   </mat-card>
   <mat-card *ngIf="citydata" class="datacard">
     <div class="display-4 text-center tempinfo">Temperature Information</div>
-    <hr />
+    <br>
+    <mat-divider></mat-divider>
     <br />
     <mat-card-header>
       <div mat-card-avatar><img [src]="url" /></div>
@@ -50,12 +51,6 @@
       }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <!-- <p>Temperature: {{ citydata.temp }} Celsius</p>
-      <p>Feels Like: {{ citydata.feelsLike }} Celsius</p>
-      <p>Minimun Temperature: {{ citydata.tempMin }} Celsius</p>
-      <p>Maximum Temperature: {{ citydata.tempMax }} Celsius</p>
-      <p>Pressure: {{ citydata.pressure }}</p>
-      <p>Humidity: {{ citydata.humidity }}</p> -->
       <mat-list role="list">
         <mat-list-item role="listitem">
           <mat-icon>thermostat</mat-icon>
@@ -69,18 +64,18 @@
           <mat-icon>thermostat</mat-icon> Minimun Temperature:
           {{ citydata.tempMin }} Celsius
         </mat-list-item>
-      
-      <mat-list-item role="listitem">
-        <mat-icon>thermostat</mat-icon> Maximum Temperature:
-        {{ citydata.tempMax }} Celsius
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <mat-icon>compress</mat-icon>Pressure: {{ citydata.pressure }}
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <mat-icon>air</mat-icon> Humidity: {{ citydata.humidity }}
-      </mat-list-item>
-    </mat-list>
+
+        <mat-list-item role="listitem">
+          <mat-icon>thermostat</mat-icon> Maximum Temperature:
+          {{ citydata.tempMax }} Celsius
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <mat-icon>compress</mat-icon>Pressure: {{ citydata.pressure }}
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <mat-icon>air</mat-icon> Humidity: {{ citydata.humidity }}
+        </mat-list-item>
+      </mat-list>
     </mat-card-content>
   </mat-card>
 </div>

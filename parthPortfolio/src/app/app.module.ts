@@ -60,7 +60,6 @@ import { JokesComponent } from './jokes/jokes.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,7 +90,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     MatTableModule,
-    
+    MatDialogModule,
+    MatDividerModule,
   ],
   providers: [],
 
