@@ -54,6 +54,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { WeatherComponent } from './weather/weather.component';
+import { JokesComponent } from './jokes/jokes.component';
 
 
 
@@ -63,7 +65,9 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     NavComponent,
     ProfileComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    WeatherComponent,
+    JokesComponent
    
   ],
   imports: [

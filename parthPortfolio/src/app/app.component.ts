@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'parthPortfolio';
 
-  showFiller = false;
+  showHome = false;
+  navName="Portfolio";
+  portfolio(){
+    this.navName="Projects";
+    this.showHome=true;
+  }
+  home(){
+    this.navName="Portfolio";
+    this.showHome=false;
+  }
 }

@@ -26,3 +26,6 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.buttonclass{
+  width:max-content;
+}
