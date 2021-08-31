@@ -31,13 +31,20 @@
         Get Weather Data
       </button>
     </mat-card-actions>
+    <mat-card-footer *ngIf="progressbar == true">
+      <mat-progress-bar
+        mode="indeterminate"
+        *ngIf="progressbar == true"
+      ></mat-progress-bar>
+    </mat-card-footer>
+
     <mat-card-footer *ngIf="errorMessage" class="text-center text-danger">
       {{ errorMessage }}
     </mat-card-footer>
   </mat-card>
   <mat-card *ngIf="citydata" class="datacard">
     <div class="display-4 text-center tempinfo">Temperature Information</div>
-    <br>
+    <br />
     <mat-divider></mat-divider>
     <br />
     <mat-card-header>
@@ -73,7 +80,8 @@
           <mat-icon>compress</mat-icon>Pressure: {{ citydata.pressure }}
         </mat-list-item>
         <mat-list-item role="listitem">
-          <mat-icon>air</mat-icon> Humidity: {{ citydata.humidity }}
+          <mat-icon>air</mat-icon> Humidity:
+          {{ citydata.humidity | percent: digitInfo }}
         </mat-list-item>
       </mat-list>
     </mat-card-content>
