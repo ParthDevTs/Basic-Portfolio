@@ -1,21 +1,35 @@
-
 .example-header-image {
   background-image: url("/assets/utypaslbyxwfuwhfdzxd.png");
   background-size: cover;
 }
-.mat-tab{
-    background-color: rgb(163, 144, 144);
+.mat-tab {
+  background-color: rgb(163, 144, 144);
 }
-.mat-tab-group{
-    background-color: transparent;
-    color: black;
-    width: 100%;
-    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.207);
-}
-.jumbotron{
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.207);
-}
-.cardedu{
+.mat-tab-group {
   background-color: transparent;
   color: black;
+  width: 100%;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.207);
+}
+.jumbotron {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.207);
+  background: black url("/assets/profilebg.jpeg");
+  color: white;
+
+  background-size: cover;
+}
+.cardedu {
+  background-color: transparent;
+  color: white;
+}
+.car-ex{
+  background: transparent
+}
+.display-1{
+  color: rgb(255, 70, 101);
+  z-index: 100;
+  position: relative;
+  font-weight: 800;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0px 1px 1px 0px white;
 }
