@@ -1,3 +1,10 @@
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+}
+
 .profile-card {
   text-align: center;
   padding: 20px;
@@ -7,5 +14,17 @@
     object-fit: cover;
     border-radius: 50%;
     border-style: double black;
+    transition: 1s;
+  }
+  img:hover {
+    width: 150px;
+    height: 150px;
   }
 }
+a{
+ transition: 500ms;
+}
+a:hover{
+  box-shadow: 2px 2px rgba(155, 153, 153, 0.761);
+}
+

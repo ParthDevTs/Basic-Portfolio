@@ -2,23 +2,22 @@
   <div class="profile-card">
     <div class="header">
       <h2>Parth Kathuria</h2>
-      <h4>parth.kathuria99@gmail.com</h4>
-      <h4>Mob: 9953534048</h4>
+      <h4><mat-icon>email</mat-icon> parth.kathuria99@gmail.com</h4>
+      <h4><mat-icon>smartphone</mat-icon> 9953534048</h4>
     </div>
     <img src="../assets/Parth1.JPG" alt="parth kathuria" />
   </div>
   <mat-divider></mat-divider>
   <h2 matSubheader>Pages</h2>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/"
-    >Profile</a
-  >
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/projects"
-    >Projects</a
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/" (click)="toggleSidebar()"
+    ><mat-icon>contacts</mat-icon> Profile</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/projects" (click)="toggleSidebar()"
+    ><mat-icon>engineering</mat-icon> Projects</a
   >
 
   <mat-divider></mat-divider>
   <h2 matSubheader>Tools</h2>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/weather"
-    >Weather</a
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/weather" (click)="toggleSidebar()"
+    ><mat-icon>ac_unit</mat-icon> Weather</a
   >
 </mat-nav-list>
