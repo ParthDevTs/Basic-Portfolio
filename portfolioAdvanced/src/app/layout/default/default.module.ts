@@ -4,9 +4,17 @@ import { DefaultComponent } from './default.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { ProfileComponent } from 'src/app/modules/profile/profile.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, ProfileComponent],
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    SharedModule,
+    MatSidenavModule,
+   
+  ],
 })
 export class DefaultModule {}
