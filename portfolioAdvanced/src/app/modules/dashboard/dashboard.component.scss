@@ -9,7 +9,7 @@
 }
 mat-tab-group {
   background-color: transparent;
-  color: black;
+  color: rgb(255, 253, 253);
   width: 100%;
   box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.207);
 }
@@ -17,11 +17,16 @@ mat-tab-group {
   background-color: rgb(163, 144, 144);
 }
 .jumbotron {
-  box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.713);
+  box-shadow: 2px 2px 2px 2px rgba(119, 115, 115, 0.604);
   background: black url("/assets/coding.jpg");
   color: white;
   background-size: cover;
   font-weight: 300;
 }
-.mat-card {
+mat-card{
+  background: url('/assets/cardBack.jpg');
+  color: white;
+}
+.card-edu,mat-card-subtitle,mat-list-item,.list{
+ color: white;
 }

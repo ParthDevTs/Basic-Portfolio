@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,23 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Output() toggleSideBar: EventEmitter<any> = new EventEmitter();
   constructor() {}
+  accent = new FormControl('accent');
+  default = new FormControl('default');
+  primary = new FormControl('primary');
+
+  values = new FormControl('primary');
 
   ngOnInit(): void {}
   toggleSidebar() {
     this.toggleSideBar.emit();
+  }
+  toggleColorPrimary() {
+    this.values = this.primary;
+  }
+  toggleColorDef() {
+    this.values = this.default;
+  }
+  toggleColorAcc() {
+    this.values = this.accent;
   }
 }

@@ -3,6 +3,10 @@
     vertical-align: middle;
     margin-right: 20px;
   }
+  .svg {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
 }
 
 .profile-card {
@@ -21,10 +25,9 @@
     height: 150px;
   }
 }
-a{
- transition: 500ms;
+a {
+  transition: 500ms;
 }
-a:hover{
+a:hover {
   box-shadow: 2px 2px rgba(155, 153, 153, 0.761);
 }
-

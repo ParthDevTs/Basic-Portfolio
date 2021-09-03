@@ -19,6 +19,7 @@ export class WeatherComponent implements OnInit {
 
   getData() {
     this.progressbar = true;
+    this.errorMessage=null;
     this.getWeather();
   }
 

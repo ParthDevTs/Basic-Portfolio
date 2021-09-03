@@ -1,0 +1,316 @@
+<div class="container">
+  <mat-card class="bg-img">
+    <mat-card-content class="imgcontent">
+      <div class="text-center display-1">
+        FoodAdda Application
+      </div>
+      <br />
+      <p class="display-4" style="z-index: 100; font-weight: 300">
+        Site Description:
+      </p>
+
+      <p
+        class="text-left"
+        style="font-size: medium; font-family: sans-serif; font-weight: 300"
+      >
+        Food Adda Website is a Single Page Web Application developed using
+        Angular 10.2 frontend and Java-SpringBoot Backend. Its a Restaurant
+        booking website in which a restaurant vendor can display their
+        Restaurants, Food Items, Prices and Booking Functionality and Customer
+        can Search and book restaurants.
+        <br />
+        This is a site which can change functionality according to role selected
+        without navigating.
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div
+  class="
+    container-fluid
+    col-xs-10
+    offset-xs-1
+    col-sm-10
+    offset-sm-1
+    col-md-10
+    offset-md-1
+    col-lg-10
+    offset-lg-1
+  "
+  style="align-content: center"
+>
+  <ngb-carousel
+    *ngIf="images"
+    [interval]="3000"
+    [pauseOnHover]="true"
+    [showNavigationIndicators]="showNavigationIndicators"
+  >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Home Screen</mat-card-title>
+            <mat-card-subtitle>Search Functionality</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="assets\Home.jpg" alt="Random second slide" />
+          <br />
+          <mat-card-content
+            ><br />
+            <p>The Home screen is displayed once the application is opened</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Registration Page</mat-card-title>
+            <mat-card-subtitle>Incorrect Form</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\RegisterInccorect.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              Registation form validates the values in front end and displays
+              appropriate message
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Registration</mat-card-title>
+            <mat-card-subtitle>Correct Form</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\RegisterCorrect.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A snacbar appears if the registration is successfull and backend
+              shows sucess.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Login Page</mat-card-title>
+            <mat-card-subtitle>Custom Theme Functionality</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\ThemeChanger.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              User can select their favourite color and customise according to
+              their preference
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Login Page</mat-card-title>
+            <mat-card-subtitle>Custom Theme Functionality</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\ThemeChanger2.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              User can select their favourite color and customise according to
+              their preference
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Logged In</mat-card-title>
+            <mat-card-subtitle>Dialog Box and Snackbar</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\LoginDialog.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A dialog box opens with welcome message if the Login is success
+              and provides insight to User Roles.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>User Roles</mat-card-title>
+            <mat-card-subtitle>Available Roles</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\Roles.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A User can have and select multiple roles (if any) and sit will
+              display functionalities according to their role.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>User Roles</mat-card-title>
+            <mat-card-subtitle>Selecting a Role</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\Roles0.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A User can have and select multiple roles (if any) and sit will
+              display functionalities according to their role.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>User Roles</mat-card-title>
+            <mat-card-subtitle>Selecting a Role</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\Roles1.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A User can have and select multiple roles (if any) and sit will
+              display functionalities according to their role.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Customer Role</mat-card-title>
+            <mat-card-subtitle
+              >All Restaurants of the Application</mat-card-subtitle
+            >
+          </mat-card-header>
+          <img
+            src="assets\AllRest.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>
+              A customer can view all available restaurants and their details.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Customer Role</mat-card-title>
+            <mat-card-subtitle>Trending Restaurants</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\TrendingRest.jpg"
+            alt="Random second slide"
+            mat-card-image
+          /><br />
+          <mat-card-content
+            ><br />
+            <p>A customer can view all Trending Restaurants(rating>4.0).</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon>image</mat-icon></div>
+            <mat-card-title>Logout</mat-card-title>
+            <mat-card-subtitle>Logout Snackbar</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            src="assets\Logout.jpg"
+            alt="Random second slide"
+            mat-card-image
+          />
+          <mat-card-content>
+            <br />
+            <p>A snackbar shows after logging out</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
