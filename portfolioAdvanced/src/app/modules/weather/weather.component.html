@@ -1,19 +1,16 @@
-
 <div
-class="
-  container
-  col-md-6
-  offset-md-3
-  col-lg-6
-  offset-lg-3
-  col-sm-10
-  offset-sm-1
-  col-xs-10
-  offset-xs-1
-"
+  class="
+    container
+    col-md-6
+    offset-md-3
+    col-lg-6
+    offset-lg-3
+    col-sm-10
+    offset-sm-1
+    col-xs-10
+    offset-xs-1
+  "
 >
-    
-
   <mat-card>
     <mat-card-header>
       <div mat-card-avatar><mat-icon>nights_stay</mat-icon></div>
@@ -35,12 +32,12 @@ class="
       </button>
     </mat-card-actions>
     <mat-card-footer *ngIf="progressbar == true">
-        <br>
+      <br />
       <mat-progress-bar
         mode="indeterminate"
         *ngIf="progressbar == true"
       ></mat-progress-bar>
-      <br>
+      <br />
     </mat-card-footer>
 
     <mat-card-footer *ngIf="errorMessage" class="text-center text-danger">
@@ -82,14 +79,12 @@ class="
           {{ citydata.tempMax }} Celsius
         </mat-list-item>
         <mat-list-item role="listitem">
-          <mat-icon>compress</mat-icon>Pressure: {{ citydata.pressure }}
+          <mat-icon>compress</mat-icon>Pressure: {{ citydata.pressure }} bar
         </mat-list-item>
         <mat-list-item role="listitem">
-          <mat-icon>air</mat-icon> Humidity:
-          {{ citydata.humidity | percent: digitInfo }}
+          <mat-icon>air</mat-icon> Humidity: {{ citydata.humidity }} percent
         </mat-list-item>
       </mat-list>
     </mat-card-content>
   </mat-card>
 </div>
-

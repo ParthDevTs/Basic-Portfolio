@@ -6,6 +6,7 @@ import { ProfileComponent } from './modules/profile/profile.component';
 import { WeatherComponent } from './modules/weather/weather.component';
 
 const routes: Routes = [
+  
   {
     path: '',
     component: DefaultComponent,

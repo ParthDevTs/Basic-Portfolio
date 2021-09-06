@@ -10,10 +10,10 @@ export class HeaderComponent implements OnInit {
   @Output() toggleSideBar: EventEmitter<any> = new EventEmitter();
   constructor() {}
   accent = new FormControl('accent');
-  default = new FormControl('default');
+  default = new FormControl('basic');
   primary = new FormControl('primary');
 
-  values = new FormControl('primary');
+  values = new FormControl('basic');
 
   ngOnInit(): void {}
   toggleSidebar() {
