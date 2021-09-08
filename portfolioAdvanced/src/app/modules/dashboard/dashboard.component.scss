@@ -12,9 +12,7 @@ mat-tab-group {
   width: 100%;
   box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.802);
 }
-.mat-tab {
-  background-color: rgb(163, 144, 144);
-}
+
 .jumbotron {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.604);
   background: #444 url("/assets/coding.jpg");
@@ -24,7 +22,7 @@ mat-tab-group {
   font-weight: 300;
 }
 mat-card {
-  background: rgb(87, 89, 87) url("/assets/cardBack.jpg");
+  background: rgb(113, 116, 113) url("/assets/cardBack.jpg");
   background-blend-mode: multiply;
   color: white;
 }
@@ -33,10 +31,4 @@ mat-card-subtitle,
 mat-list-item,
 .list {
   color: white;
-}
-mat-tab-group {
-  background-color: rgb(240, 233, 233);
-}
-mat-expansion-panel {
-  background-color: rgb(247, 241, 241);
 }

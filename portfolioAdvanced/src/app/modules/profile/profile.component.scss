@@ -1,3 +1,4 @@
+
 .container-fluid {
   align-self: center;
 }
@@ -7,9 +8,7 @@
 .container {
   margin-top: 1%;
 }
-.mat-card {
-  color: rgb(24, 23, 23);
-}
+
 .img {
   object-fit: cover;
 }
@@ -21,7 +20,6 @@
 }
 
 .mat-card-subtitle {
-  color: rgb(31, 31, 31);
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
 }
@@ -40,6 +38,6 @@
   background-size: cover;
   background-blend-mode: screen;
   box-shadow: rgba(0, 0, 0, 0.878) 2px 3px 3px 2px;
-
+  color: rgb(24, 23, 23);
   z-index: -1;
 }

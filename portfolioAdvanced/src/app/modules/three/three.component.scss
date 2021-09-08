@@ -1,0 +1,17 @@
+@import "transition-style";
+:root {
+  --bg--color: hsl(49, 37%, 94%);
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background: rgb(114, 114, 114) url("/assets/footer.jpg") no-repeat center
+    center;
+  background-blend-mode: multiply;
+  background-size: cover;
+}

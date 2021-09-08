@@ -1,5 +1,9 @@
-<app-header (toggleSideBar)="sidebarToggler($event)"></app-header>
-<mat-sidenav-container>
+<app-header
+  (toggleSideBar)="sidebarToggler($event)"
+  (toggleDarkTheme)="darkThemeToggler($event)"
+  [ngClass]="{ 'dark-mode': darkmode }"
+></app-header>
+<mat-sidenav-container [ngClass]="{ 'dark-mode': darkmode }">
   <mat-sidenav mode="over" [opened]="sidebarOpen"
     ><app-sidebar (toggleSideBars)="sidebarToggler($event)"></app-sidebar
   ></mat-sidenav>

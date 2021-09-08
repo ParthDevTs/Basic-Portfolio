@@ -7,6 +7,10 @@
     vertical-align: middle;
     margin-right: 20px;
   }
+  i {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
 }
 
 .profile-card {
@@ -47,7 +51,7 @@
   img {
     width: 130px;
     height: 130px;
-    box-shadow: 0rem 0.5rem 0.5rem rgba(155, 153, 153, 0.761);
+    box-shadow: 0rem 0.5rem 0.5rem rgba(12, 12, 12, 0.761);
   }
 
   .head::after {
@@ -57,22 +61,24 @@
 
   .sub {
     transform: rotate3d(0, 1, 0, 360deg) scale(1.1);
-    color: rgb(107, 43, 255);
   }
 }
 a {
   transition: all 200ms ease-in;
 }
 a:hover {
-  transform: scaley(1.1) translateY(-3px);
-  box-shadow: 0rem 0.5rem 0.5rem rgba(155, 153, 153, 0.761);
+  transform: scaley(1.06) translateY(-3px);
+  box-shadow: 0rem 0.5rem 0.5rem rgba(31, 30, 30, 0.761);
   .instagram {
-    color: rgb(253, 44, 79);
+    color: #fd1d1d;
   }
   .linked {
-    color: rgb(7, 41, 237);
+    color: rgb(166, 178, 247);
   }
   .git {
     color: rgb(255, 214, 139);
+  }
+  .rotate {
+    transform: rotate(0, 1, 0, 260) scale(1.1);
   }
 }

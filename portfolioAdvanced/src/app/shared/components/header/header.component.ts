@@ -8,24 +8,24 @@ import { FormControl } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
   @Output() toggleSideBar: EventEmitter<any> = new EventEmitter();
+  @Output() toggleDarkTheme: EventEmitter<any> = new EventEmitter();
   constructor() {}
-  accent = new FormControl('accent');
-  default = new FormControl('basic');
-  primary = new FormControl('primary');
 
-  values = new FormControl('basic');
+  values = new FormControl('primary');
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isDarkTheme = localStorage.getItem('theme') === 'Dark' ? true : false;
+  }
+
   toggleSidebar() {
     this.toggleSideBar.emit();
   }
-  toggleColorPrimary() {
-    this.values = this.primary;
+
+  isDarkTheme: boolean = false;
+  toggleDarkThemes() {
+    this.toggleDarkTheme.emit();
   }
-  toggleColorDef() {
-    this.values = this.default;
-  }
-  toggleColorAcc() {
-    this.values = this.accent;
+  storeThemeSelection() {
+    localStorage.setItem('theme', this.isDarkTheme ? 'Dark' : 'Light');
   }
 }

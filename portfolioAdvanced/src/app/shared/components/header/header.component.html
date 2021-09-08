@@ -6,28 +6,18 @@
 
     <span>Portfolio</span>
 
-    <div
-      fxFlex
-      fxLayout="row"
-      fxLayoutAlign="flex-end"
-      style="padding-top: 5px"
-    >
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
       <ul fxLayout="row" fxLayoutGap="20px">
         <li>
-          <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon>settings</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="toggleColorPrimary()">
-              <mat-icon>palette </mat-icon> Blue
-            </button>
-            <button mat-menu-item (click)="toggleColorAcc()">
-              <mat-icon>palette </mat-icon> Pink
-            </button>
-            <button mat-menu-item (click)="toggleColorDef()">
-              <mat-icon>palette </mat-icon> Grey
-            </button>
-          </mat-menu>
+          <mat-slide-toggle
+            [(ngModel)]="isDarkTheme"
+            (click)="toggleDarkThemes()"
+            (change)="storeThemeSelection()"
+            name="first-name"
+            labelPosition="before"
+          >
+            <mat-icon class="btna">dark_mode</mat-icon></mat-slide-toggle
+          >
         </li>
       </ul>
     </div>

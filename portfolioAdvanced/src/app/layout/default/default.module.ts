@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ThreeComponent } from 'src/app/modules/three/three.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     DashboardComponent,
     ProfileComponent,
     WeatherComponent,
+    ThreeComponent,
   ],
   imports: [
     CommonModule,
