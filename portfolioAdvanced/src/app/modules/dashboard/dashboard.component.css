@@ -1,0 +1,41 @@
+.example-header-image {
+  background-image: url("/assets/utypaslbyxwfuwhfdzxd.png");
+  background-size: cover;
+}
+
+.display-1 {
+  color: #ffb7c3;
+  font-size: 3em;
+  text-align: center;
+}
+
+mat-tab-group {
+  color: #fffdfd;
+  width: 100%;
+  -webkit-box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.802);
+          box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.802);
+}
+
+.jumbotron {
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.604);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.604);
+  background: #444 url("/assets/coding.jpg");
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+  font-weight: 300;
+}
+
+mat-card {
+  background: #717471 url("/assets/cardBack.jpg");
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.card-edu,
+mat-card-subtitle,
+mat-list-item,
+.list {
+  color: white;
+}
+/*# sourceMappingURL=dashboard.component.css.map */

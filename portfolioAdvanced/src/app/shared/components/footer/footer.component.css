@@ -1,0 +1,162 @@
+footer {
+  padding: 5px;
+  text-align: center;
+  background: black url("/assets/footer.jpg");
+  background-size: cover;
+}
+
+body {
+  background: #000;
+}
+
+.btn {
+  position: relative;
+  top: 93%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+}
+
+.btn p {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn p::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #fcfcfc;
+}
+
+.btn p::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #fdfdfd;
+}
+
+.btn p::before {
+  top: 19px;
+  left: 0px;
+  -webkit-animation: frontBtnL 1s infinite linear;
+          animation: frontBtnL 1s infinite linear;
+}
+
+.btn p::after {
+  bottom: 19px;
+  right: 0px;
+  -webkit-animation: frontBtnR 1s infinite linear;
+          animation: frontBtnR 1s infinite linear;
+}
+
+.btn p:hover::before, .btn p:hover::after {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.btn p a {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn p a:hover {
+  background: #0099F7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F11712), to(#0099F7));
+  background: linear-gradient(to right, #F11712, #0099F7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  color: transparent;
+}
+
+@-webkit-keyframes frontBtnL {
+  0% {
+    top: 19px;
+    left: 0px;
+  }
+  12% {
+    top: 0px;
+    left: 0px;
+  }
+  76% {
+    top: 0px;
+    left: 198px;
+  }
+  100% {
+    top: 19px;
+    left: 198px;
+  }
+}
+
+@keyframes frontBtnL {
+  0% {
+    top: 19px;
+    left: 0px;
+  }
+  12% {
+    top: 0px;
+    left: 0px;
+  }
+  76% {
+    top: 0px;
+    left: 198px;
+  }
+  100% {
+    top: 19px;
+    left: 198px;
+  }
+}
+
+@-webkit-keyframes frontBtnR {
+  0% {
+    bottom: 19px;
+    right: 0px;
+  }
+  12% {
+    bottom: 0px;
+    right: 0px;
+  }
+  76% {
+    bottom: 0px;
+    right: 198px;
+  }
+  100% {
+    bottom: 19px;
+    right: 198px;
+  }
+}
+
+@keyframes frontBtnR {
+  0% {
+    bottom: 19px;
+    right: 0px;
+  }
+  12% {
+    bottom: 0px;
+    right: 0px;
+  }
+  76% {
+    bottom: 0px;
+    right: 198px;
+  }
+  100% {
+    bottom: 19px;
+    right: 198px;
+  }
+}
+/*# sourceMappingURL=footer.component.css.map */

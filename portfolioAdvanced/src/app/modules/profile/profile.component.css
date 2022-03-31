@@ -1,0 +1,52 @@
+.container-fluid {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ngb-carousel {
+  border-radius: 2px;
+}
+
+.container {
+  margin-top: 1%;
+}
+
+.img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-fluid {
+  padding: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.508) 2px 3px 3px 2px;
+          box-shadow: rgba(0, 0, 0, 0.508) 2px 3px 3px 2px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.mat-card-subtitle {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
+.display-1 {
+  color: #f2365f;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mat-card-content {
+  text-align: center;
+}
+
+.bg-img {
+  background: #807e7e url("/assets/Food.jpeg");
+  background-size: cover;
+  background-blend-mode: screen;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.878) 2px 3px 3px 2px;
+          box-shadow: rgba(0, 0, 0, 0.878) 2px 3px 3px 2px;
+  color: #181717;
+  z-index: -1;
+}
+/*# sourceMappingURL=profile.component.css.map */

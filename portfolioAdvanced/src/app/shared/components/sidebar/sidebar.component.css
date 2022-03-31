@@ -1,0 +1,107 @@
+:host .mat-icon {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+:host .svg {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+:host i {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.profile-card {
+  text-align: center;
+  padding: 15px;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border-style: double black;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  position: relative;
+}
+
+.profile-card .head {
+  position: relative;
+}
+
+.profile-card .head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 500ms ease-in;
+  transition: -webkit-transform 500ms ease-in;
+  transition: transform 500ms ease-in;
+  transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+}
+
+.profile-card .sub {
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.profile-card:hover img {
+  width: 130px;
+  height: 130px;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(12, 12, 12, 0.761);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(12, 12, 12, 0.761);
+}
+
+.profile-card:hover .head::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.profile-card:hover .sub {
+  -webkit-transform: rotate3d(0, 1, 0, 360deg) scale(1.1);
+          transform: rotate3d(0, 1, 0, 360deg) scale(1.1);
+}
+
+a {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+a:hover {
+  -webkit-transform: scaley(1.06) translateY(-3px);
+          transform: scaley(1.06) translateY(-3px);
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(31, 30, 30, 0.761);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(31, 30, 30, 0.761);
+}
+
+a:hover .instagram {
+  color: #fd1d1d;
+}
+
+a:hover .linked {
+  color: #a6b2f7;
+}
+
+a:hover .git {
+  color: #ffd68b;
+}
+
+a:hover .rotate {
+  -webkit-transform: rotate(0, 1, 0, 260) scale(1.1);
+          transform: rotate(0, 1, 0, 260) scale(1.1);
+}
+/*# sourceMappingURL=sidebar.component.css.map */
